@@ -12,7 +12,7 @@ module.exports = class ReadyEvent extends BaseEvent {
          name: `${serverIn} servers.`,
          type: "WATCHING"
        },
-       status: 'dnd'
+       status: 'online'
     })
     .catch(console.error);
   }
