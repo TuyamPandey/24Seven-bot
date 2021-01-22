@@ -5,6 +5,7 @@ module.exports = class ReadyEvent extends BaseEvent {
     super('ready');
   }
   async run (client) {
+    let serverIn = await client.guilds.cache.size;
     console.log(client.user.tag + ' has logged in.');
     client.user.setPresence({
        activity: {
