@@ -11,9 +11,10 @@ module.exports = class HelpCommand extends BaseCommand {
 
     const helpEmbed = new Discord.MessageEmbed()
     .setTitle(`Welcome to the Help Menu! `)
-    .setDescription(`Following are the list of all commands (Prefix = "-"): `)
+    .setDescription(`Type '-invite' to get invite link to add the bot in your server. \n Following are the list of all commands (Prefix = "-"): `)
     .setFooter('---Help log---')
     .addFields(
+      { name: `invite`, value: `Invite link for the bot.`, inline: false },
       { name: `kick`, value: `Kicks mentioned user.`, inline: false },
       { name: `ban`, value: `Bans mentioned user.`, inline: false },
       { name: `unban`, value: `Unbans mentioned user ID.`, inline: false },
