@@ -24,6 +24,7 @@ module.exports = class HelpCommand extends BaseCommand {
       { name: `meme`, value: `Fetches a meme for the user.`, inline: false },
       { name: `8ball`, value: `Mysterious 8ball to answer your questions.`, inline: false },
       { name: `howgay`, value: `Gay rate calculator.`, inline: false },
+      { name: `simprate`, value: `Simp rate calculator.`, inline: false },
       { name: `say`, value: `The bot displays user's message as an embed.`, inline: false },
       
 
