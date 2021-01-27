@@ -11,7 +11,7 @@ module.exports = class HelpCommand extends BaseCommand {
 
     const helpEmbed = new Discord.MessageEmbed()
     .setTitle(`Welcome to the Help Menu! `)
-    .setDescription(`Type '-invite' to get invite link to add the bot in your server. \n Following are the list of all commands (Prefix = "s-"): `)
+    .setDescription(`Type 's- invite' to get invite link to add the bot in your server. \n Following are the list of all commands (Prefix = "s-"): `)
     .setFooter('---Help log---')
     .addFields(
       { name: `invite`, value: `Invite link for the bot.`, inline: false },
@@ -22,7 +22,10 @@ module.exports = class HelpCommand extends BaseCommand {
       { name: `nuke`, value: `Deletes channel and creates a copy of it.`, inline: false },
       { name: `nickname`, value: `Changes server name of mentioned user.`, inline: false },
       { name: `meme`, value: `Fetches a meme for the user.`, inline: false },
+      { name: `8ball`, value: `Mysterious 8ball to answer your questions.`, inline: false },
+      { name: `howgay`, value: `Gay rate calculator.`, inline: false },
       { name: `say`, value: `The bot displays user's message as an embed.`, inline: false },
+      
 
     )
     .setColor("#5708ab")
