@@ -15,9 +15,10 @@ module.exports = class HelpCommand extends BaseCommand {
     .setFooter('---Help log---')
     .addFields(
       { name: `invite`, value: `Invite link for the bot. [s- invite]`, inline: false },
+      { name: `giveawayhelp`, value: `Help menu for conducting giveaways. [s- giveawayhelp]`, inline: false },
       { name: `kick`, value: `Kicks mentioned user. [s- kick @user <reason>]`, inline: false },
       { name: `ban`, value: `Bans mentioned user. [s- ban @user <reason>]`, inline: false },
-      { name: `unban`, value: `Unbans mentioned user ID. [s- unban userid <reason>]`, inline: false },
+      { name: `unban`, value: `Unbans mentioned user ID. [s- unban userid <reason> | (Enable developer options in your settings to see user id)]`, inline: false },
       { name: `purge`, value: `Deletes specified number of messages. [s- purge <number of messages>]`, inline: false },
       { name: `nuke`, value: `Deletes channel and creates a copy of it. [s- nuke]`, inline: false },
       { name: `nickname`, value: `Changes server name of mentioned user. [s- nickname @user <new nick>]`, inline: false },

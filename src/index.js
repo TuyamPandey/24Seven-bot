@@ -1,8 +1,18 @@
 
-const { Client } = require('discord.js');
+const { Client, ReactionCollector } = require('discord.js');
 const { registerCommands, registerEvents } = require('./utils/registry');
 const config = require('../slappey.json');
 const client = new Client();
+
+client.config = config;
+
+const { GiveawaysManager } = require('discord-giveaways')
+client.giveaways = new GiveawaysManager(client, {
+  storage: `./giveaways.json`,
+  updateCountdownEvery: 5000,
+  embedColor: `Random`,
+  reaction: `🎉`,
+});
 
 (async () => {
   client.commands = new Map();
