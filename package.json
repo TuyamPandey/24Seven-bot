@@ -14,8 +14,10 @@
   "dependencies": {
     "discord-giveaways": "^4.4.3",
     "discord.js": "^12.5.1",
+    "discord.js-pagination": "^1.0.3",
     "ms": "^2.1.3",
-    "reconlx": "^1.0.8"
+    "reconlx": "^1.0.8",
+    "weather-js": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

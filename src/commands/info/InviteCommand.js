@@ -20,3 +20,4 @@ module.exports = class InviteCommand extends BaseCommand {
         msg.edit('',inviteEmbed);
   }
 }
+
