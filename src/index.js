@@ -1,6 +1,8 @@
 
 const { Client, ReactionCollector } = require('discord.js');
 const { registerCommands, registerEvents } = require('./utils/registry');
+const AutoPoster = require('topgg-autoposter')
+const poster = AutoPoster('topggtoken', client);
 const config = require('../slappey.json');
 const client = new Client();
 
