@@ -20,6 +20,8 @@ module.exports = class HelpCommand extends BaseCommand {
       { name: `4. Fun-Zone`, value: `Commands for games and fun activites.`, inline: false },
       { name: `5. Utility`, value: `Commands for utility services.`, inline: false },
     )
+    .addField( '`Support Server Link: `', '[Join Server](https://discord.gg/EkMm9Zzr5Q)')
+    .addField( '`Voting Link: `', '[Vote](https://top.gg/bot/801139364372414475/vote)')
     .setTimestamp()
 
         const moderation = new Discord.MessageEmbed()
